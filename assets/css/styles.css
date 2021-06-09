@@ -508,33 +508,21 @@ img{
 }
 
 
-
-
-
 /* ===== CONTACT =====*/
-.contact__input{
-  width: 100%;
-  font-size: var(--normal-font-size);
-  font-weight: var(--font-semi);
-  padding: 1rem;
-  border-radius: .25rem;
-  border: 1.5px solid var(--second-color);
-  outline: none;
-  margin-bottom: var(--mb-4);
-}
-.contact__button{
-  display: block;
-  border: none;
-  outline: none;
-  font-size: var(--normal-font-size);
-  cursor: pointer;
-  margin-left: auto;
+
+.contact__link {
+  font-size: 1.25rem;
+  text-decoration: none;
+  color: black;
 }
 
-::placeholder {
-  font-size: 1rem;
-  opacity: 0.8;
-  font-family: monospace, monospace;
+.contact__item {
+  margin: var(--mb-1);
+  padding-bottom: 0.5rem;
+}
+
+.contact {
+  margin-bottom: 3rem;
 }
 
 /* ===== FOOTER =====*/
