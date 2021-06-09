@@ -1,23 +1,24 @@
-/*===== GOOGLE FONTS =====*/
-@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap");
 /*===== VARIABLES CSS =====*/
 :root{
   --header-height: 3rem;
   --font-semi: 600;
 }
 
-/*===== Colores =====*/
+/*===== Colors =====*/
 :root{
   /* --first-color: #4070F4;
   --second-color: #0E2431; */
 
   --first-color: #7ABCDD;
   --second-color: #304A57;
+  --white-color: #E9EAEC;
+  --dark-color: #4A5257;
+  --dark-color-lighten: #F2F5FF;
 }
 
-/*===== Fuente y tipografia =====*/
+/*===== Fonts =====*/
 :root{
-  --body-font: 'Poppins', sans-serif;
+  --body-font: monospace, monospace;
   --big-font-size: 2rem;
   --h2-font-size: 1.25rem;
   --normal-font-size: 0.938rem;
@@ -30,7 +31,7 @@
   }
 }
 
-/*===== Margenes =====*/
+/*===== Margins =====*/
 :root{
   --mb-1: 0.5rem;
   --mb-2: 1rem;
@@ -209,7 +210,7 @@ img{
 .home__social-icon{
   width: max-content;
   margin-bottom: var(--mb-2);
-  font-size: 1.5rem;
+  font-size: 2.25rem;
   color: var(--second-color);
 }
 .home__social-icon:hover{
@@ -252,77 +253,111 @@ img{
 }
 
 /* ===== SKILLS =====*/
-.skills__container{
-  row-gap: 2rem;
-  text-align: center;
-}
-.skills__subtitle{
-  margin-bottom: var(--mb-2);
-}
-.skills__text{
-  margin-bottom: var(--mb-4);
-}
-.skills__data{
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  position: relative;
-  font-weight: var(--font-semi);
-  padding: .5rem 1rem;
-  margin-bottom: var(--mb-4);
-  border-radius: .5rem;
-  box-shadow: 0 4px 25px rgba(14,36,49,.15);
-}
-.skills__icon{
-  font-size: 2rem;
-  margin-right: var(--mb-2);
-  color: var(--first-color);
-}
-.skills__names{
-  display: flex;
-  align-items: center;
-}
-.skills__bar{
-  position: absolute;
-  left: 0;
-  bottom: 0;
-  background-color: var(--first-color);
-  height: .25rem;
-  border-radius: .5rem;
-  z-index: var(--z-back);
-}
-.skills__html{
-  width: 95%;
-}
-.skills__css{
-  width: 85%;
-}
-.skills__js{
-  width: 65%;
-}
-.skills__ux{
-  width: 85%;
-}
-.skills__img{
-  border-radius: .5rem;
-}
+
 
 /* ===== WORK =====*/
 .work__container{
   row-gap: 2rem;
+  justify-content: center;
+  align-items: center;
 }
-.work__img{
-  box-shadow: 0 4px 25px rgba(14,36,49,.15);
-  border-radius: .5rem;
-  overflow: hidden;
+
+
+
+
+
+
+
+/*===== CARD =====*/
+/* .container {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: var(--dark-color-lighten);
+  position: relative;
+} */
+
+.card {
+  width: 280px;
+  height: 350px;
+  background-color: var(--dark-color);
+  border-radius: 1rem;
+  padding: 4rem 2rem 0;
+  color: var(--white-color);
+  overflow-y: hidden;
+  position: relative;
+
+
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
 }
-.work__img img{
-  transition: 1s;
-  cursor: pointer;
+
+.card__img {
+  position: absolute;
+  width: 218px;
+
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
 }
-.work__img img:hover{
-  transform: scale(1.1);
+
+.card__data {
+  transform: translateY(13.2rem);
+  text-align: center;
 }
+
+.card__title {
+  font-size: var(--font-semi);
+  color: var(--first-color);
+  margin-bottom: 0.5rem;
+}
+
+
+.card__description {
+  font-size: 0.75rem;
+  text-align: center;
+  margin-bottom: 0.5rem;
+  margin-top: 0.5rem;
+  opacity: 0;
+}
+
+.card__button {
+  font-size: 1rem;
+  color: #fff;
+}
+
+.card__img, 
+.card__data, 
+.card__title,  
+.card__description {
+  transition: .5s;
+}
+
+/* Hover card effect */
+.card:hover .card__img {
+  transform: translate(0, -3rem) ;
+}
+
+.card:hover .card__data {
+  transform: translateY(10rem);
+}
+
+.card:hover .card__title {
+  margin-bottom: 0;
+}
+
+
+.card:hover .card__description, 
+.card:hover .card__button {
+  transition-delay: .2s;
+  opacity: 1;
+}
+
+
+
+
 
 /* ===== CONTACT =====*/
 .contact__input{
@@ -330,7 +365,7 @@ img{
   font-size: var(--normal-font-size);
   font-weight: var(--font-semi);
   padding: 1rem;
-  border-radius: .5rem;
+  border-radius: .25rem;
   border: 1.5px solid var(--second-color);
   outline: none;
   margin-bottom: var(--mb-4);
@@ -342,6 +377,12 @@ img{
   font-size: var(--normal-font-size);
   cursor: pointer;
   margin-left: auto;
+}
+
+::placeholder {
+  font-size: 1rem;
+  opacity: 0.8;
+  font-family: monospace, monospace;
 }
 
 /* ===== FOOTER =====*/
