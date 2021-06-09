@@ -25,8 +25,9 @@
                 <ul class='nav__list'>
                     <li class="nav__item"><a href="#home" class="nav__link active">Home</a></li>
                     <li class="nav__item"><a href="#about" class="nav__link">About</a></li>
+                    <li class="nav__item"><a href="#education" class="nav__link">Education</a></li>
                     <li class="nav__item"><a href="#skills" class="nav__link">Skills</a></li>
-                    <li class="nav__item"><a href="#work" class="nav__link">Work</a></li>
+                    <li class="nav__item"><a href="#projects" class="nav__link">Projects</a></li>
                     <li class="nav__item"><a href="#contact" class="nav__link">Contact</a></li>
                 </ul>
             </div>
@@ -51,7 +52,8 @@
             <div class="home__social">
                 <a href="https://www.linkedin.com/in/nvbinh/" class="home__social-icon" target="_blank"><i
                         class='bx bxl-linkedin'></i></a>
-                <a href="https://github.com/nvbinh15" class="home__social-icon" target="_blank"><i class='bx bxl-github'></i></a>
+                <a href="https://github.com/nvbinh15" class="home__social-icon" target="_blank"><i
+                        class='bx bxl-github'></i></a>
             </div>
 
             <div class="home__img">
@@ -70,21 +72,101 @@
 
                 <div>
                     <h2 class="about__subtitle">My name is Nguyen Van Binh</h2>
-                    <p class="about__text">I'm currently a year 2 student at National University of Singapore, majored
+                    <p class="about__text">I'm a sophomore at National University of Singapore, majored
                         in Computer Engineering with a minor in Management.</p>
                 </div>
             </div>
         </section>
 
+
+        <!--Education-->
+        <section class="education section" id="education">
+            <h2 class="section-title">Education</h2>
+
+            <div class="timeline">
+                <ul>
+                    <li>
+                        <div class="content">
+                            <h3>National University of Singapore</h3>
+                            <p>Computer Engineering</p>
+                        </div>
+                        <div class="time">
+                            <h4>2020 - now</h4>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="content">
+                            <h3>Hanoi University of Science and Technology</h3>
+                            <p>Data Science and Artificial Intelligence</p>
+                        </div>
+                        <div class="time">
+                            <h4>2019 - 2020</h4>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="content">
+                            <h3>Phan Boi Chau High School for the Gifted</h3>
+                            <p>Physics</p>
+                        </div>
+                        <div class="time">
+                            <h4>2016 - 2019</h4>
+                        </div>
+                    </li>
+
+                    <div style="clear:both;"></div>
+                </ul>
+            </div>
+
+
+        </section>
         <!--Skills-->
         <section class="skills section" id="skills">
             <h2 class="section-title">Skills</h2>
+
+            <div class="skills__container bd-grid">
+
+                <div class="skills">
+                    <h3 class="skill__title">Programming Languages</h3>
+                    <ul>
+                        <li>Python</li>
+                        <li>C/C++</li>
+                        <li>Java</li>
+                    </ul>
+                </div>
+
+                <div class="skills">
+                    <h3 class="skill__title">Web Programming</h3>
+                    <ul>
+                        <li>Django</li>
+                        <li>HTML/CSS/JavaScript</li>
+                        <li>VueJS</li>
+                    </ul>
+                </div>
+
+                <div class="skills">
+                    <h3 class="skill__title">Hardware</h3>
+                    <ul>
+                        <li>Raspberry Pi</li>
+                        <li>Arduino Uno</li>
+                        <li>Verilog</li>
+                    </ul>
+                </div>
+
+                <div class="skills">
+                    <h3 class="skill__title">AI / Machine Learning</h3>
+                    <ul>
+                        <li>TensorFlow</li>
+                        <li>Keras</li>
+                    </ul>
+                </div>
+
+            </div>
 
         </section>
 
 
         <!--Projects-->
-        <section class="work section" id="work">
+        <section class="work section" id="projects">
             <h2 class="section-title">Projects</h2>
 
             <div class="work__container bd-grid">
@@ -93,10 +175,12 @@
                     <img src="assets/img/mbot.png" alt="" class="card__img">
                     <div class="card__data">
                         <h1 class="card__title">mBot</h1>
-        
-                        <p class="card__description">An autonomous robot that can solve a maze, detect and process data from the
+
+                        <p class="card__description">An autonomous robot that can solve a maze, detect and process data
+                            from the
                             environment using Arduino Uno</p>
-                        <a href="https://github.com/nvbinh15/CG1111-mBot" class="card__button"><i class='bx bxl-github' target="_blank"></i></a>
+                        <a href="https://github.com/nvbinh15/CG1111-mBot" class="card__button"><i class='bx bxl-github'
+                                target="_blank"></i></a>
                     </div>
                 </div>
 
@@ -105,9 +189,11 @@
                     <img src="assets/img/alex.png" alt="" class="card__img">
                     <div class="card__data">
                         <h1 class="card__title">Alex</h1>
-        
-                        <p class="card__description">A tele-operated robotic vehicle with search and rescue functionalities using Raspberry Pi and Arduino Uno </p>
-                        <a href="https://github.com/nvbinh15/CG1112-Alex-03-04-02" class="card__button" target="_blank"><i class='bx bxl-github'></i></a>
+
+                        <p class="card__description">A tele-operated robotic vehicle with search and rescue
+                            functionalities using Raspberry Pi and Arduino Uno </p>
+                        <a href="https://github.com/nvbinh15/CG1112-Alex-03-04-02" class="card__button"
+                            target="_blank"><i class='bx bxl-github'></i></a>
                     </div>
                 </div>
 
@@ -116,9 +202,11 @@
                     <img src="assets/img/fpga.png" alt="" class="card__img">
                     <div class="card__data">
                         <h1 class="card__title">FPGA Project</h1>
-        
-                        <p class="card__description">A Sight and Sound Entertainment system using Verilog and Digilent Basys 3 Board</p>
-                        <a href="https://github.com/nvbinh15/FPGA-Project-EE2026" class="card__button" target="_blank"><i class='bx bxl-github'></i></a>
+
+                        <p class="card__description">A Sight and Sound Entertainment system using Verilog and Digilent
+                            Basys 3 Board</p>
+                        <a href="https://github.com/nvbinh15/FPGA-Project-EE2026" class="card__button"
+                            target="_blank"><i class='bx bxl-github'></i></a>
                     </div>
                 </div>
 
@@ -126,14 +214,14 @@
                     <img src="assets/img/web.png" alt="" class="card__img">
                     <div class="card__data">
                         <h1 class="card__title">ActiveNUS</h1>
-                        <p class="card__description">A web-based application promotes time management techniques and study methods</p>
-                        <a href="https://github.com/nvbinh15/ActiveNUS" class="card__button" target="_blank"><i class='bx bxl-github'></i></a>
-                        <a href="https://activenus.herokuapp.com/" class="card__button" target="_blank"><i class='bx bx-link-external'></i></a>
+                        <p class="card__description">A web-based application promotes time management techniques and
+                            study methods</p>
+                        <a href="https://github.com/nvbinh15/ActiveNUS" class="card__button" target="_blank"><i
+                                class='bx bxl-github'></i></a>
+                        <a href="https://activenus.herokuapp.com/" class="card__button" target="_blank"><i
+                                class='bx bx-link-external'></i></a>
                     </div>
                 </div>
-
-
-
 
             </div>
         </section>
@@ -143,11 +231,10 @@
             <h2 class="section-title">Contact Me</h2>
 
             <div class="contact__container bd-grid">
-                <form action="" class="contact__form">
-                    <input type="text" placeholder="Name" class="contact__input">
-                    <input type="mail" placeholder="Email" class="contact__input">
+                <form method='GET' action="mailto::binh.pdc01@gmail.com" class="contact__form">
+                    <input type="text" placeholder="Subject" class="contact__input">
                     <textarea name="" placeholder="Message" id="" cols="0" rows="10" class="contact__input"></textarea>
-                    <input type="button" value="Send" class="contact__button button">
+                    <input type="submit" value="Send" class="contact__button button">
                 </form>
             </div>
         </section>
@@ -157,7 +244,8 @@
     <footer class="footer">
         <p class="footer__title">Van Binh</p>
         <div class="footer__social">
-            <a href="https://www.linkedin.com/in/nvbinh/" class="footer__icon" target="_blank"><i class='bx bxl-linkedin'></i></a>
+            <a href="https://www.linkedin.com/in/nvbinh/" class="footer__icon" target="_blank"><i
+                    class='bx bxl-linkedin'></i></a>
             <a href="https://github.com/nvbinh15" class="footer__icon" target="_blank"><i class='bx bxl-github'></i></a>
         </div>
     </footer>
