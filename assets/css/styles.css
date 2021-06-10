@@ -421,8 +421,8 @@ img{
   text-align: center;
 }
 
-/* ===== WORK =====*/
-.work__container{
+/* ===== PROJECTS =====*/
+.projects__container{
   row-gap: 2rem;
   justify-content: center;
   align-items: center;
@@ -513,6 +513,7 @@ img{
 .contact__link {
   font-size: 1.25rem;
   text-decoration: none;
+  opacity: 0.75;
   color: black;
 }
 
@@ -610,7 +611,7 @@ img{
   .about__img img{
     width: 300px;
   }
-  .work__container{
+  .projects__container{
     grid-template-columns: repeat(3, 1fr);
     grid-template-rows: repeat(2,1fr);
     column-gap: 2rem;
