@@ -47,8 +47,8 @@ sr.reveal('.about__text',{delay: 200});
 /*SCROLL SKILLS*/
 sr.reveal('.skills', {interval: 100})
 
-/*SCROLL WORK*/
-sr.reveal('.work__img',{interval: 100}); 
+/*SCROLL PROJECTS*/
+sr.reveal('.card',{interval: 100}); 
 
 /*SCROLL CONTACT*/
 sr.reveal('.contact__item',{interval: 100}); 
