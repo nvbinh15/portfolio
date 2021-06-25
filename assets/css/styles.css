@@ -226,14 +226,19 @@ img{
 /*BUTTONS*/
 .button{
   display: inline-block;
-  background-color: var(--first-color);
+  background-color: var(--second-color);
   color: #fff;
-  padding: .75rem 2.5rem;
-  font-weight: var(--font-semi);
+  padding: .75rem 2rem;
+  /* font-weight: var(--font-semi); */
+  font-weight: bolder;
+  font: var(--body-font);
   border-radius: .5rem;
+  margin-top: 2rem;
+  border: none;
 }
 .button:hover{
-  box-shadow: 0 10px 36px rgba(0,0,0,.15);
+  box-shadow: 0 5px 18px rgba(0,0,0,.15);
+  cursor: pointer;
 }
 
 /* ===== ABOUT =====*/
