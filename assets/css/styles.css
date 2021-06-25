@@ -230,15 +230,16 @@ img{
   color: #fff;
   padding: .75rem 2rem;
   /* font-weight: var(--font-semi); */
-  font-weight: bolder;
+  font-weight: 9000;
   font: var(--body-font);
   border-radius: .5rem;
   margin-top: 2rem;
   border: none;
 }
 .button:hover{
-  box-shadow: 0 5px 18px rgba(0,0,0,.15);
+  /* box-shadow: 0 5px 18px rgba(0,0,0,.15); */
   cursor: pointer;
+  background-color: #325464;
 }
 
 /* ===== ABOUT =====*/
