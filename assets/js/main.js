@@ -61,3 +61,16 @@ sr.reveal('h4',{interval: 100})
 
 
 
+// Change Theme
+const btn = document.querySelector(".btn-theme");
+const theme = document.querySelector("#theme");
+
+btn.addEventListener("click", function() {
+  if (theme.getAttribute("href") == "assets/css/styles.css") {
+    theme.href = "assets/css/styles_dark.css";
+
+  } else {
+    theme.href = "assets/css/styles.css";
+  }
+});
+
