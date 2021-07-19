@@ -60,7 +60,6 @@ sr.reveal('.tine',{interval: 100})
 sr.reveal('h4',{interval: 100})
 
 
-
 // Change Theme
 const btn = document.querySelector(".btn-theme");
 const theme = document.querySelector("#theme");
@@ -93,4 +92,31 @@ function scrollFunction() {
 function goToTop() {
   document.body.scrollTop = 0; // For Safari
   document.documentElement.scrollTop = 0; // For Chrome, Firefox, IE and Opera
+}
+
+
+/*===== QUALIFICATION TOGGLE =====*/
+
+function showExperience() {
+  var eduToggle = document.getElementById("education-toggle");
+  var expToggle = document.getElementById("experience-toggle");
+  var exp = document.getElementById("experience");
+  var edu = document.getElementById("education");
+
+  eduToggle.style.opacity = 0.5;
+  expToggle.style.opacity = 1;
+  exp.style.display = "block";
+  edu.style.display = "none";
+}
+
+function showEducation() {
+  var eduToggle = document.getElementById("education-toggle");
+  var expToggle = document.getElementById("experience-toggle");
+  var exp = document.getElementById("experience");
+  var edu = document.getElementById("education");
+
+  expToggle.style.opacity = 0.5;
+  eduToggle.style.opacity = 1;
+  edu.style.display = "block";
+  exp.style.display = "none";
 }

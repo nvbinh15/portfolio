@@ -253,7 +253,7 @@ img{
   border-radius: .5rem;
 }
 
-/* ==== EDUCATION ====*/
+/* ==== QUALIFICATION ====*/
 
 .timeline{
   position:relative;
@@ -674,4 +674,22 @@ img{
   opacity: 0.75;
   transform: translateY(-0.3em);
   transition: 0.25s;
+}
+
+.q__toggle {
+  cursor: pointer;
+  opacity: 0.5;
+  padding: 1rem;
+}
+
+#education-toggle {
+  opacity: 1;
+}
+
+#education {
+  display: block;
+}
+
+#experience {
+  display: none;
 }

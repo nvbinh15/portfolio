@@ -3,6 +3,7 @@
 
 <head>
     <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
 
@@ -36,11 +37,10 @@
                 <ul class='nav__list'>
 
                     <li class='btn-theme'><i class='bx bxs-sun bx-sm'></i></li>
-                    <!-- <i class='bx bxs-moon bx-sm' ></i> -->
 
                     <li class="nav__item"><a href="#home" class="nav__link active">Home</a></li>
                     <li class="nav__item"><a href="#about" class="nav__link">About</a></li>
-                    <li class="nav__item"><a href="#education" class="nav__link">Education</a></li>
+                    <li class="nav__item"><a href="#qualification" class="nav__link">Qualification</a></li>
                     <li class="nav__item"><a href="#skills" class="nav__link">Skills</a></li>
                     <li class="nav__item"><a href="#projects" class="nav__link">Projects</a></li>
                     <li class="nav__item"><a href="#contact" class="nav__link">Contact</a></li>
@@ -94,11 +94,50 @@
             </div>
         </section>
 
-        <!--Education-->
-        <section class="education section" id="education">
-            <h2 class="section-title">Education</h2>
+        <!--Qualifications-->
+        <section class="qualification section" id="qualification">
+            <h2 class="section-title">Qualification</h2>
 
-            <div class="timeline">
+            <div style="text-align: center;">
+                <p>
+                    <span class="q__toggle" id="education-toggle" onclick="showEducation()">&nbsp;<i class='bx-fw bx bxs-book-open'></i> Education</span>
+                    <i class='bx-fw bx bx-dots-vertical' ></i>
+                    <span class="q__toggle" id="experience-toggle" onclick="showExperience()"><i class='bx-fw bx bxs-briefcase' ></i> Experience</span>
+                </p>
+
+
+            </div>
+            
+
+            <!-- Experience -->
+            <div class="timeline" id="experience">
+                <ul>
+                    <li>
+                        <div class="content">
+                            <h3>Teaching Assistant - National University of Singapore</h3>
+                            <p>Data Structure and Algorithms (CS2040C)</p>
+                        </div>
+                        <div class="time">
+                            <h4>8 - 12/2021</h4>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="content">
+                            <h3>Research Assistant - Edison Experimental Physics Laboratory</h3>
+                            <p>Design & test experimental Physics models</p>
+                            <p>Teach Physics Olympiad teams</p>
+                        </div>
+                        <div class="time">
+                            <h4>2019 - 2020</h4>
+                        </div>
+                    </li>
+
+                    <div style="clear:both;"></div>
+                </ul>
+            </div>
+
+            <!-- Education -->
+            <div class="timeline" id="education">
                 <ul>
                     <li>
                         <div class="content">
@@ -132,7 +171,6 @@
                     <div style="clear:both;"></div>
                 </ul>
             </div>
-
 
         </section>
         <!--Skills-->
