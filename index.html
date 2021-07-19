@@ -16,11 +16,11 @@
     <!-- Global site tag (gtag.js) - Google Analytics -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=G-5RQXFD3QGW"></script>
     <script>
-    window.dataLayer = window.dataLayer || [];
-    function gtag(){dataLayer.push(arguments);}
-    gtag('js', new Date());
+        window.dataLayer = window.dataLayer || [];
+        function gtag() { dataLayer.push(arguments); }
+        gtag('js', new Date());
 
-    gtag('config', 'G-5RQXFD3QGW');
+        gtag('config', 'G-5RQXFD3QGW');
     </script>
 
 </head>
@@ -59,7 +59,7 @@
         <section class="home bd-grid" id="home">
             <div class="home__data">
                 <h1 class="home__title">
-                        Welcome to<span class="home__title-color">
+                    Welcome to<span class="home__title-color">
                         <br>Van Binh's </span> website!
                 </h1>
             </div>
@@ -87,9 +87,11 @@
 
                 <div>
                     <h2 class="about__subtitle">Software Engineer</h2>
-                    <p class="about__text">Sophomore at National University of Singapore. Looking for jobs in Software Engineering and AI-related fields.</p>
+                    <p class="about__text">Sophomore at National University of Singapore. Looking for jobs in Software
+                        Engineering and AI-related fields.</p>
 
-                    <a href="assets/Van Binh's Resume.pdf" download="Van Binh's Resume" target="_blank"><button class='button'><i class='bx-fw bx bxs-download'></i>&nbspMy Resume</button></a>
+                    <a href="assets/Van Binh's Resume.pdf" download="Van Binh's Resume" target="_blank"><button
+                            class='button'><i class='bx-fw bx bxs-download'></i>&nbspMy Resume</button></a>
                 </div>
             </div>
         </section>
@@ -100,77 +102,81 @@
 
             <div style="text-align: center;">
                 <p>
-                    <span class="q__toggle" id="education-toggle" onclick="showEducation()">&nbsp;<i class='bx-fw bx bxs-book-open'></i> Education</span>
-                    <i class='bx-fw bx bx-dots-vertical' ></i>
-                    <span class="q__toggle" id="experience-toggle" onclick="showExperience()"><i class='bx-fw bx bxs-briefcase' ></i> Experience</span>
+                    <span class="q__toggle" id="education-toggle" onclick="showEducation()">&nbsp;<i
+                            class='bx-fw bx bxs-book-open'></i> Education</span>
+                    <i class='bx-fw bx bx-dots-vertical'></i>
+                    <span class="q__toggle" id="experience-toggle" onclick="showExperience()"><i
+                            class='bx-fw bx bxs-briefcase'></i> Experience</span>
                 </p>
 
 
             </div>
-            
 
-            <!-- Experience -->
-            <div class="timeline" id="experience">
-                <ul>
-                    <li>
-                        <div class="content">
-                            <h3>Teaching Assistant - National University of Singapore</h3>
-                            <p>Data Structure and Algorithms (CS2040C)</p>
-                        </div>
-                        <div class="time">
-                            <h4>8 - 12/2021</h4>
-                        </div>
-                    </li>
-                    <li>
-                        <div class="content">
-                            <h3>Research Assistant - Edison Experimental Physics Laboratory</h3>
-                            <p>Design & test experimental Physics models</p>
-                            <p>Teach Physics Olympiad teams</p>
-                        </div>
-                        <div class="time">
-                            <h4>2019 - 2020</h4>
-                        </div>
-                    </li>
+            <div class="qualification__container">
+                <!-- Experience -->
+                <div class="timeline" id="experience">
+                    <ul>
+                        <li>
+                            <div class="content">
+                                <h3>Teaching Assistant - National University of Singapore</h3>
+                                <p>Data Structure and Algorithms (CS2040C)</p>
+                            </div>
+                            <div class="time">
+                                <h4>8 - 12/2021</h4>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="content">
+                                <h3>Research Assistant - Edison Experimental Physics Laboratory</h3>
+                                <p>Design & test experimental Physics models</p>
+                                <p>Teach Physics Olympiad teams</p>
+                            </div>
+                            <div class="time">
+                                <h4>2019 - 2020</h4>
+                            </div>
+                        </li>
 
-                    <div style="clear:both;"></div>
-                </ul>
+                        <div style="clear:both;"></div>
+                    </ul>
+                </div>
+
+                <!-- Education -->
+                <div class="timeline" id="education">
+                    <ul>
+                        <li>
+                            <div class="content">
+                                <h3>National University of Singapore</h3>
+                                <p>Computer Engineering</p>
+                                <p>Minor in Management</p>
+                            </div>
+                            <div class="time">
+                                <h4>2020 - now</h4>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="content">
+                                <h3>Hanoi University of Science and Technology</h3>
+                                <p>Data Science and Artificial Intelligence</p>
+                            </div>
+                            <div class="time">
+                                <h4>2019 - 2020</h4>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="content">
+                                <h3>Phan Boi Chau High School for the Gifted</h3>
+                                <p>Physics</p>
+                            </div>
+                            <div class="time">
+                                <h4>2016 - 2019</h4>
+                            </div>
+                        </li>
+
+                        <div style="clear:both;"></div>
+                    </ul>
+                </div>
             </div>
 
-            <!-- Education -->
-            <div class="timeline" id="education">
-                <ul>
-                    <li>
-                        <div class="content">
-                            <h3>National University of Singapore</h3>
-                            <p>Computer Engineering</p>
-                            <p>Minor in Management</p>
-                        </div>
-                        <div class="time">
-                            <h4>2020 - now</h4>
-                        </div>
-                    </li>
-                    <li>
-                        <div class="content">
-                            <h3>Hanoi University of Science and Technology</h3>
-                            <p>Data Science and Artificial Intelligence</p>
-                        </div>
-                        <div class="time">
-                            <h4>2019 - 2020</h4>
-                        </div>
-                    </li>
-                    <li>
-                        <div class="content">
-                            <h3>Phan Boi Chau High School for the Gifted</h3>
-                            <p>Physics</p>
-                        </div>
-                        <div class="time">
-                            <h4>2016 - 2019</h4>
-                        </div>
-                    </li>
-
-                    <div style="clear:both;"></div>
-                </ul>
-            </div>
 
         </section>
         <!--Skills-->
@@ -281,8 +287,8 @@
                         <p class="card__description">Discord bot telling jokes and predicting Euro matches' results</p>
                         <a href="https://github.com/nvbinh15/Stitch" class="card__button" target="_blank"><i
                                 class='bx bxl-github'></i></a>
-                        <a href="https://discord.com/oauth2/authorize?client_id=855056579598352414&permissions=0&scope=bot" class="card__button" target="_blank"><i
-                                class='bx bx-link-external'></i></a>
+                        <a href="https://discord.com/oauth2/authorize?client_id=855056579598352414&permissions=0&scope=bot"
+                            class="card__button" target="_blank"><i class='bx bx-link-external'></i></a>
                     </div>
                 </div>
 
@@ -298,10 +304,12 @@
                     <a href='tel:+6583652435' class='contact__link'><i class='bx bxs-phone'></i> (+65) 8365 2435</a>
                 </div>
                 <div class="contact__item">
-                    <a href='mailto:binh.pdc01@gmail.com' target="_blank" class='contact__link'><i class='bx bxs-envelope'></i> binh.pdc01@gmail.com</a>
+                    <a href='mailto:binh.pdc01@gmail.com' target="_blank" class='contact__link'><i
+                            class='bx bxs-envelope'></i> binh.pdc01@gmail.com</a>
                 </div>
                 <div class="contact__item">
-                    <a href='https://t.me/binh_nguyen' target="_blank" class='contact__link'><i class='bx bxl-telegram'></i> binh_nguyen</a>
+                    <a href='https://t.me/binh_nguyen' target="_blank" class='contact__link'><i
+                            class='bx bxl-telegram'></i> binh_nguyen</a>
                 </div>
 
             </div>

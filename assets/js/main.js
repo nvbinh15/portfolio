@@ -54,10 +54,11 @@ sr.reveal('.card',{interval: 100});
 /*SCROLL CONTACT*/
 sr.reveal('.contact__item',{interval: 100}); 
 
-/*SCROLL EDUCATION*/
-sr.reveal('.content',{interval: 100})
-sr.reveal('.tine',{interval: 100})
-sr.reveal('h4',{interval: 100})
+/*SCROLL QUALIFICATION*/
+// sr.reveal('.content',{interval: 100});
+// sr.reveal('.tine',{interval: 100});
+// sr.reveal('h4',{interval: 100});
+sr.reveal('.qualification__container',{interval: 250});
 
 
 // Change Theme
