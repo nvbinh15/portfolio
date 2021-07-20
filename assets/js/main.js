@@ -30,7 +30,7 @@ const sr = ScrollReveal({
     origin: 'top',
     distance: '50px',
     duration: 750,
-    reset: true
+    reset: false
 });
 
 /*SCROLL HOME*/
@@ -52,13 +52,13 @@ sr.reveal('.skills', {interval: 100})
 sr.reveal('.card',{interval: 100}); 
 
 /*SCROLL CONTACT*/
-sr.reveal('.contact__item',{interval: 100}); 
+sr.reveal('.contact__container',{interval: 100}); 
 
 /*SCROLL QUALIFICATION*/
-// sr.reveal('.content',{interval: 100});
-// sr.reveal('.tine',{interval: 100});
-// sr.reveal('h4',{interval: 100});
 sr.reveal('.qualification__container',{interval: 250});
+
+/*SCROLL AWARDS*/
+sr.reveal('.awards__container',{interval: 250});
 
 
 // Change Theme

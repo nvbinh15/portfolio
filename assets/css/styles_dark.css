@@ -619,6 +619,10 @@ img{
   .contact__container{
     justify-items: center;
   }
+  .awards__container {
+    grid-template-columns: repeat(3, 1fr);
+    column-gap: 2rem;
+  }
 }
 
 @media screen and (min-width: 1024px){
@@ -686,4 +690,50 @@ img{
 
 #experience {
   display: none;
+}
+
+/* Awards */
+.awards__container{
+  row-gap: 2rem;
+  justify-content: center;
+  align-items: center;
+}
+
+.award__img {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 60%;
+  transition: 0.5s;
+}
+
+.award__div {
+  justify-content: center;
+  align-items: center;
+  overflow-y: hidden;
+  position: relative;
+  display: block;
+}
+
+.award__description {
+  margin: 0 0 0.5rem 0;
+}
+
+.award__hide {
+  padding: 0 1rem 0 2rem;
+  opacity: 0;
+  height: 0;
+  transition: 0.5s;
+}
+
+.award__div:hover .award__hide {
+  transform: translateY(-8rem);
+  opacity: 1;
+  transition: 0.5s;
+}
+
+.award__div:hover .award__img {
+  opacity: 0.2;
+  transform: translateX(-3rem);
+  transition: 0.5s;
 }
