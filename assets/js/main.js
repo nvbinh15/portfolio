@@ -26,39 +26,38 @@ function linkAction(){
 navLink.forEach(n => n.addEventListener('click', linkAction));
 
 /*===== SCROLL REVEAL ANIMATION =====*/
-const sr = ScrollReveal({
+const srTop = ScrollReveal({
     origin: 'top',
     distance: '50px',
-    duration: 750,
+    duration: 800,
     reset: false
 });
 
 /*SCROLL HOME*/
-sr.reveal('.home__title',{}); 
-sr.reveal('.button',{delay: 100}); 
-sr.reveal('.home__img',{delay: 200}); 
-sr.reveal('.home__social-icon',{ interval: 100}); 
+srTop.reveal('.home__title',{}); 
+srTop.reveal('.button',{delay: 100}); 
+srTop.reveal('.home__img',{delay: 200}); 
+srTop.reveal('.home__social-icon',{ interval: 100}); 
 
-/*SCROLL ABOUT*/
-sr.reveal('.about__img',{}); 
-sr.reveal('.about__subtitle',{delay: 200}); 
-sr.reveal('.about__text',{delay: 200}); 
-sr.reveal('.button',{}); 
+// /*SCROLL ABOUT*/
+// srTop.reveal('.about__img',{delay: 100}); 
+// srTop.reveal('.about__subtitle',{delay: 200}); 
+// srTop.reveal('.about__text',{delay: 200}); 
+// srTop.reveal('.button',{delay: 100}); 
 
 /*SCROLL SKILLS*/
-sr.reveal('.skills', {interval: 100})
+srTop.reveal('.skills', {interval: 100})
 
 /*SCROLL PROJECTS*/
-sr.reveal('.card',{interval: 100}); 
+srTop.reveal('.card',{interval: 100}); 
 
-/*SCROLL CONTACT*/
-sr.reveal('.contact__container',{interval: 100}); 
+
 
 /*SCROLL QUALIFICATION*/
-sr.reveal('.qualification__container',{interval: 250});
+srTop.reveal('.qualification__container',{interval: 250});
 
 /*SCROLL AWARDS*/
-sr.reveal('.awards__container',{interval: 250});
+srTop.reveal('.awards__container',{interval: 250});
 
 
 // Change Theme
@@ -121,3 +120,19 @@ function showEducation() {
   edu.style.display = "block";
   exp.style.display = "none";
 }
+
+const srLeft = ScrollReveal({
+  origin: 'left',
+  distance: '75px',
+  duration: 800,
+  reset: false
+});
+
+/*SCROLL ABOUT*/
+srLeft.reveal('.about__img',{delay: 100}); 
+srLeft.reveal('.about__subtitle',{delay: 200}); 
+srLeft.reveal('.about__text',{delay: 200}); 
+srLeft.reveal('.button',{delay: 100}); 
+
+/*SCROLL CONTACT*/
+srLeft.reveal('.contact__container',{interval: 100}); 
