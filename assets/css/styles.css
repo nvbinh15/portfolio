@@ -17,6 +17,7 @@
 :root{
   --body-font: monospace, monospace;
   --big-font-size: 2rem;
+  --h1-font-size: 1.5rem;
   --h2-font-size: 1.25rem;
   --normal-font-size: 0.938rem;
 }
@@ -664,6 +665,14 @@ img{
   cursor: pointer;
 }
 
+@media screen and (min-width: 768px) and (max-width: 979px) { 
+  .home__title{
+    font-size: 3rem;
+  } 
+  .home__img{
+    width: 400px;
+  }
+}
 
 /* ===== Go to top button =====*/
 #goToTop {

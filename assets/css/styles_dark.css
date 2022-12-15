@@ -658,6 +658,15 @@ img{
   }
 }
 
+@media screen and (min-width: 768px) and (max-width: 979px) { 
+  .home__title{
+    font-size: 3rem;
+  } 
+  .home__img{
+    width: 400px;
+  }
+}
+
 /* ===== Go to top button =====*/
 #goToTop {
   display: none;
