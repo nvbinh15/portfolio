@@ -14,13 +14,13 @@
     <title>Nguyen Van Binh</title>
 
     <!-- Global site tag (gtag.js) - Google Analytics -->
-    <script async src="https://www.googletagmanager.com/gtag/js?id=G-5RQXFD3QGW"></script>
+    <script async src="https://www.googletagmanager.com/gtag/js?id={{env('GOOGLE_ANALYTICS_ID')}}"></script>
     <script>
         window.dataLayer = window.dataLayer || [];
         function gtag() { dataLayer.push(arguments); }
         gtag('js', new Date());
 
-        gtag('config', 'G-5RQXFD3QGW');
+        gtag('config', '{{env('GOOGLE_ANALYTICS_ID')}}');
     </script>
 
 </head>
@@ -88,15 +88,16 @@
                 </div>
 
                 <div>
-                    <h2 class="about__subtitle">Software/Machine Learning Engineer</h2>
+                    <h2 class="about__subtitle">Machine Learning/Software Engineer</h2>
                     <p class="about__text">Third year Undergraduate in Computer Engineering at the National University of Singapore.
                         Enthusiastic learner and product-maker who loves contributing to Software Engineering and
                         AI-related projects.</p>
 
                     <br>
 
-                    <p class="about__text">I write on Medium. <a style="color:inherit; text-decoration:underline" 
-                        target="_blank" href="https://medium.com/@nvbinh">Check it out!</a></p>
+                    <p class="about__text">I write frequently. Check out <a style="color:inherit; text-decoration:underline" 
+                        target="_blank" href="https://medium.com/@nvbinh">my Medium</a> or <a style="color:inherit; text-decoration:underline" 
+                        target="_blank" href="https://nvbinh-blog.vercel.app/">my perosnal blog</a>!</p>
 
                     <a href="assets/Nguyen Van Binh - Resume.pdf" download="Nguyen Van Binh - Resume"
                         target="_blank"><button class='button'><i class='bx-fw bx bxs-download'></i>&nbspMy
