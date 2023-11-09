@@ -754,3 +754,24 @@ img{
   transform: translateX(-3rem);
   transition: 0.5s;
 }
+
+.tags {
+  margin-bottom: 30px;
+  display: block;
+  text-align: center;
+}
+.tag-button {
+  margin-right: 2px;
+  padding: 5px 10px 5px 10px; 
+  cursor: pointer;
+  background-color: #1B262C;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  font-size: var(--normal-font-size);
+}
+
+.tag-button:hover {
+  background-color: var(--dark-color);
+  color: white;
+}

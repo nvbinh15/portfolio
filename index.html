@@ -340,9 +340,17 @@
         <section class="projects section" id="projects">
             <h2 class="section-title">Projects</h2>
 
+            <div class="tags">
+                <button class="tag-button" onclick="filterProjects('all')">All</button>
+                <button class="tag-button" onclick="filterProjects('machine-learning')">Machine Learning</button>
+                <button class="tag-button" onclick="filterProjects('robotics')">Robotics</button>
+                <button class="tag-button" onclick="filterProjects('web')">Web</button>
+                <button class="tag-button" onclick="filterProjects('others')">Others</button>
+            </div>
+
             <div class="projects__container bd-grid">
 
-                <div class="card">
+                <div class="card" data-tags="robotics">
                     <img src="assets/img/alex.png" alt="" class="card__img">
                     <div class="card__data">
                         <h1 class="card__title">Alex</h1>
@@ -354,7 +362,18 @@
                     </div>
                 </div>
 
-                <div class="card">
+                <div class="card" data-tags="machine-learning">
+                    <img src="assets/img/quora.png" alt="" class="card__img">
+                    <div class="card__data">
+                        <h1 class="card__title">Quora Question Pairs</h1>
+
+                        <p class="card__description">Duplicate question detection and generative language models using RNN, BERT family LLMs, MLP, and transformers</p>
+                        <a href="https://github.com/cs3244-group-16/quora-question-pairs" class="card__button"
+                            target="_blank"><i class='bx bxl-github'></i></a>
+                    </div>
+                </div>
+
+                <div class="card" data-tags="web">
                     <img src="assets/img/activenus.png" alt="" class="card__img">
                     <div class="card__data">
                         <h1 class="card__title">ActiveNUS</h1>
@@ -369,7 +388,7 @@
                     </div>
                 </div>
 
-                <div class="card">
+                <div class="card" data-tags="robotics machine-learning">
                     <img src="assets/img/laster_tag.png" alt="" class="card__img">
                     <div class="card__data">
                         <h1 class="card__title">Laser Tag++</h1>
@@ -381,7 +400,7 @@
                     </div>
                 </div>
 
-                <div class="card">
+                <div class="card" data-tags="machine-learning">
                     <img src="assets/img/discord.png" alt="" class="card__img">
                     <div class="card__data">
                         <h1 class="card__title">DisneyLang</h1>
@@ -394,7 +413,7 @@
                     </div>
                 </div>
 
-                <!-- <div class="card">
+                <div class="card" data-tags="others">
                     <img src="assets/img/fpga.png" alt="" class="card__img">
                     <div class="card__data">
                         <h1 class="card__title">FPGA Project</h1>
@@ -404,9 +423,9 @@
                         <a href="https://github.com/nvbinh15/FPGA-Project-EE2026" class="card__button"
                             target="_blank"><i class='bx bxl-github'></i></a>
                     </div>
-                </div> -->
+                </div>
 
-                <!-- <div class="card">
+                <div class="card" data-tags="robotics">
                     <img src="assets/img/mbot.png" alt="" class="card__img">
                     <div class="card__data">
                         <h1 class="card__title">mBot</h1>
@@ -416,7 +435,7 @@
                         <a href="https://github.com/nvbinh15/CG1111-mBot" class="card__button"><i class='bx bxl-github'
                                 target="_blank"></i></a>
                     </div>
-                </div> -->
+                </div>
 
                 <!-- <div class="card">
                     <img src="assets/img/discord.png" alt="" class="card__img">
@@ -430,7 +449,7 @@
                     </div>
                 </div> -->
 
-                <div class="card">
+                <div class="card" data-tags="others">
                     <img src="assets/img/java.png" alt="" class="card__img">
                     <div class="card__data">
                         <h1 class="card__title">CLICK</h1>
@@ -442,7 +461,7 @@
                 </div>
 
 
-                <div class="card">
+                <div class="card" data-tags="robotics">
                     <img src="assets/img/rtos.png" alt="" class="card__img">
                     <div class="card__data">
                         <h1 class="card__title">RTOS Project</h1>

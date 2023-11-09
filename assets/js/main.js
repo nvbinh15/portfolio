@@ -128,6 +128,20 @@ const srLeft = ScrollReveal({
   reset: false
 });
 
+/*===== PROJECTS FILTER =====*/
+
+function filterProjects(tag) {
+  const cards = document.querySelectorAll('.card');
+  cards.forEach(card => {
+      const tags = card.getAttribute('data-tags').split(' ');
+      if (tag === 'all' || tags.includes(tag)) {
+          card.style.display = 'block';
+      } else {
+          card.style.display = 'none';
+      }
+  });
+}
+
 /*SCROLL ABOUT*/
 srLeft.reveal('.about__img',{delay: 100}); 
 srLeft.reveal('.about__subtitle',{delay: 200}); 
@@ -135,4 +149,4 @@ srLeft.reveal('.about__text',{delay: 200});
 srLeft.reveal('.button',{delay: 100}); 
 
 /*SCROLL CONTACT*/
-srLeft.reveal('.contact__container',{interval: 100}); 
+srLeft.reveal('.contact__container',{interval: 100});
