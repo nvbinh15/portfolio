@@ -1,477 +1,651 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link
+      href="https://cdn.jsdelivr.net/npm/boxicons@2.0.5/css/boxicons.min.css"
+      rel="stylesheet"
+    />
 
-
-    <link href='https://cdn.jsdelivr.net/npm/boxicons@2.0.5/css/boxicons.min.css' rel='stylesheet'>
-
-    <link rel='icon' href='assets/img/binh1.png'>
-    <link rel='stylesheet' href='assets/css/styles.css' id='theme'>
+    <link rel="icon" href="assets/img/binh1.png" />
+    <link rel="stylesheet" href="assets/css/styles.css" id="theme" />
     <title>Nguyen Van Binh</title>
 
     <!-- Global site tag (gtag.js) - Google Analytics -->
-    <script async src="https://www.googletagmanager.com/gtag/js?id={{env('GOOGLE_ANALYTICS_ID')}}"></script>
+    <script
+      async
+      src="https://www.googletagmanager.com/gtag/js?id={{env('GOOGLE_ANALYTICS_ID')}}"
+    ></script>
     <script>
-        window.dataLayer = window.dataLayer || [];
-        function gtag() { dataLayer.push(arguments); }
-        gtag('js', new Date());
+      window.dataLayer = window.dataLayer || [];
+      function gtag() {
+        dataLayer.push(arguments);
+      }
+      gtag("js", new Date());
 
-        gtag('config', "{{env('GOOGLE_ANALYTICS_ID')}}");
+      gtag("config", "{{env('GOOGLE_ANALYTICS_ID')}}");
     </script>
+  </head>
 
-</head>
-
-<body>
+  <body>
     <!--Header-->
-    <header class='l-header'>
-        <nav class="nav bd-grid">
-            <div>
-                <a href='#' class='nav__logo'>Van Binh</a>
-            </div>
+    <header class="l-header">
+      <nav class="nav bd-grid">
+        <div>
+          <a href="#" class="nav__logo">Van Binh</a>
+        </div>
 
-            <div class="nav__menu" id="nav-menu">
-                <ul class='nav__list'>
+        <div class="nav__menu" id="nav-menu">
+          <ul class="nav__list">
+            <li class="btn-theme"><i class="bx bxs-sun bx-sm"></i></li>
 
-                    <li class='btn-theme'><i class='bx bxs-sun bx-sm'></i></li>
+            <li class="nav__item">
+              <a href="#about" class="nav__link">About</a>
+            </li>
+            <li class="nav__item">
+              <a href="#qualification" class="nav__link">Qualification</a>
+            </li>
+            <li class="nav__item">
+              <a href="#skills" class="nav__link">Skills</a>
+            </li>
+            <li class="nav__item">
+              <a href="#projects" class="nav__link">Projects</a>
+            </li>
+            <li class="nav__item">
+              <a href="#awards" class="nav__link">Awards</a>
+            </li>
+            <li class="nav__item">
+              <a href="#contact" class="nav__link">Contact</a>
+            </li>
+          </ul>
+        </div>
 
-                    <li class="nav__item"><a href="#about" class="nav__link">About</a></li>
-                    <li class="nav__item"><a href="#qualification" class="nav__link">Qualification</a></li>
-                    <li class="nav__item"><a href="#skills" class="nav__link">Skills</a></li>
-                    <li class="nav__item"><a href="#projects" class="nav__link">Projects</a></li>
-                    <li class="nav__item"><a href="#awards" class="nav__link">Awards</a></li>
-                    <li class="nav__item"><a href="#contact" class="nav__link">Contact</a></li>
-
-                </ul>
-            </div>
-
-            <div class="nav__toggle" id="nav-toggle">
-                <i class="bx bx-menu"></i>
-            </div>
-        </nav>
+        <div class="nav__toggle" id="nav-toggle">
+          <i class="bx bx-menu"></i>
+        </div>
+      </nav>
     </header>
 
     <main class="l-main">
-        <!--Home-->
-        <section class="home bd-grid" id="home">
-            <div class="home__data">
-                <h1 class="home__title">
-                    Hi! <br>
-                    I'm<span class="home__title-color"> Van Binh</span>
-                </h1>
-            </div>
+      <!--Home-->
+      <section class="home bd-grid" id="home">
+        <div class="home__data">
+          <h1 class="home__title">
+            Hi! <br />
+            I'm<span class="home__title-color"> Van Binh</span>
+          </h1>
+        </div>
 
-            <div class="home__social">
-                <a href="https://www.linkedin.com/in/nvbinh/" class="home__social-icon" target="_blank"><i
-                        class='bx bxl-linkedin'></i></a>
-                <a href="https://github.com/nvbinh15" class="home__social-icon" target="_blank"><i
-                        class='bx bxl-github'></i></a>
-                <a href="https://medium.com/@nvbinh" class="home__social-icon" target="_blank"><i class='bx bxl-medium'></i></a>
-            </div>
+        <div class="home__social">
+          <a
+            href="https://www.linkedin.com/in/nvbinh/"
+            class="home__social-icon"
+            target="_blank"
+            ><i class="bx bxl-linkedin"></i
+          ></a>
+          <a
+            href="https://github.com/nvbinh15"
+            class="home__social-icon"
+            target="_blank"
+            ><i class="bx bxl-github"></i
+          ></a>
+          <a
+            href="https://medium.com/@nvbinh"
+            class="home__social-icon"
+            target="_blank"
+            ><i class="bx bxl-medium"></i
+          ></a>
+        </div>
 
+        <div class="home__img">
+          <img src="assets/img/binh1.png" />
+        </div>
+      </section>
 
-            <div class="home__img">
-                <img src='assets/img/binh1.png'>
-            </div>
-        </section>
+      <!--About-->
+      <section class="about section" id="about">
+        <h2 class="section-title">About</h2>
 
+        <div class="about__container bd-grid">
+          <div class="about__img">
+            <img src="assets/img/binh3.png" />
+          </div>
 
-        <!--About-->
-        <section class="about section" id="about">
-            <h2 class="section-title">About</h2>
+          <div>
+            <h2 class="about__subtitle">
+              Software / Machine Learning Engineer
+            </h2>
+            <p class="about__text">
+              Software Engineer at Momos, Computer Engineering graduate from the
+              National University of Singapore. Specialized in machine learning
+              system and web-based application.
+            </p>
+            <br />
 
-            <div class="about__container bd-grid">
-                <div class="about__img">
-                    <img src='assets/img/binh3.png'>
-                </div>
+            <p class="about__text">
+              Check out
+              <a
+                style="color: inherit; text-decoration: underline"
+                target="_blank"
+                href="https://nvbinh.substack.com/"
+                >my Substack</a
+              >
+            </p>
 
-                <div>
-                    <h2 class="about__subtitle">Full-Stack Machine Learning Engineer</h2>
-                    <p class="about__text">Senior Computer Engineering undergraduate at NUS specializing in full data science and engineering lifecycle. A knowledge-sharing advocate having experience shipping machine learning and software solutions for startups across Asia and Europe.</p>
-
-                    <br>
-
-                    <p class="about__text">Check out <a style="color:inherit; text-decoration:underline" 
-                        target="_blank" href="https://medium.com/@nvbinh">my Medium</a> or <a style="color:inherit; text-decoration:underline" 
-                        target="_blank" href="https://nvbinh-blog.vercel.app/">my perosnal blog</a>!</p>
-
-                    <a href="assets/Nguyen Van Binh - Resume.pdf" download="Nguyen Van Binh - Resume"
+            <!-- <a href="assets/Nguyen Van Binh - Resume.pdf" download="Nguyen Van Binh - Resume"
                         target="_blank"><button class='button'><i class='bx-fw bx bxs-download'></i>&nbspMy
-                            Resume</button></a>                                   
-                </div>
+                            Resume</button></a>                                    -->
+          </div>
 
+          <!-- <div class="">
+                    <a href=""><img src="assets/img/substack-speech.jpg" alt="" width="200"></a>    
+                </div> -->
+        </div>
+      </section>
+
+      <!--Qualifications-->
+      <section class="qualification section" id="qualification">
+        <h2 class="section-title">Qualification</h2>
+
+        <div style="text-align: center">
+          <p>
+            <span
+              class="q__toggle"
+              id="education-toggle"
+              onclick="showEducation()"
+              >&nbsp;<i class="bx-fw bx bxs-book-open"></i> Education</span
+            >
+            <i class="bx-fw bx bx-dots-vertical"></i>
+            <span
+              class="q__toggle"
+              id="experience-toggle"
+              onclick="showExperience()"
+              ><i class="bx-fw bx bxs-briefcase"></i> Experience</span
+            >
+          </p>
+        </div>
+
+        <div class="qualification__container">
+          <!-- Experience -->
+          <div class="timeline" id="experience">
+            <ul>
+              <li>
+                <div class="content">
+                  <h3>Software Engineer, Machine Learning Intern</h3>
+                  <h3>Vebits (Singapore)</h3>
+                  <p>
+                    Train and quantize ResNet-50 and YOLOv7 models with
+                    ByteTrack for image classification, object detection and
+                    tracking
+                  </p>
+                  <p>
+                    Build real-time video streaming system (1080p resolution at
+                    30fps) integrating machine learning inference on Rockchip
+                    and Qualcomm SoC with hardware-accelerated codecs using
+                    GStreamer, multiprocessing, and pipelining in Python
+                  </p>
+                  <p>
+                    Create Python binding for C++ Snapdragon kernel libraries,
+                    streamlining development cycle for on-chip machine learning
+                    systems, bringing down inference time by 25 times compared
+                    to pure Python implementation
+                  </p>
+                  <p>
+                    Deliver tools for camera calibration, image
+                    orthogonalization, image stitching, distance, and depth
+                    estimations with OpenCV, speeding up internal image
+                    processing workflow by 55%
+                  </p>
+                </div>
+                <div class="time">
+                  <h4>1 - 6/2024</h4>
+                </div>
+              </li>
+
+              <li>
+                <div class="content">
+                  <h3>Data Science Intern</h3>
+                  <h3>Science Feedback (Paris)</h3>
+                  <p>
+                    Developed web domain credibility ranking models with graph
+                    neural networks adopting PyTorch and NetworkX, set up
+                    end-to-end ML pipeline, deployed models in production
+                    (making prediction for > 1 million domains) using FastAPI
+                  </p>
+                  <p>
+                    Established data infrastructure (data warehouse,
+                    computation, orchestration) on Azure Cloud Services,
+                    enhancing data security, quality, and integrity, improving
+                    efficiency of data and software teams, and fastening ML life
+                    cycle by 40%
+                  </p>
+                  <p>
+                    Increased efficiency of social media data scraping process
+                    by 30% through customization of open-source tools
+                  </p>
+                </div>
+                <div class="time">
+                  <h4>2 - 8/2023</h4>
+                </div>
+              </li>
+
+              <li>
+                <div class="content">
+                  <h3>Research Assistant</h3>
+                  <h3>National University of Singapore</h3>
+                  <p>
+                    Analysed tradeoffs in learning algorithms for spiking fully
+                    connected and convolutional neural networks
+                  </p>
+                  <p>
+                    Framed architecture and wrote assembly instructions for
+                    spiking neural network hardware accelerators on FPGA
+                  </p>
+                </div>
+                <div class="time">
+                  <h4>1 - 12/2022</h4>
+                </div>
+              </li>
+
+              <li>
+                <div class="content">
+                  <h3>Teaching Assistant</h3>
+                  <h3>National University of Singapore</h3>
+                  <p>
+                    <b><i>Named on the Honor List of Student Tutors</i></b>
+                  </p>
+                  <p><b>IT5003 - Data Structure and Algorithms</b></p>
+                  <p>Conducted classes of ~20 Master students</p>
+                  <p>
+                    Reviewed related concepts and techniques, showcased live
+                    coding in Python
+                  </p>
+
+                  <p><b>CS2102 - Database Systems</b></p>
+                  <p>
+                    Facilitated the teaching and discussion of Relational
+                    Algebra, Entity-Relationship model, SQL, PostgreSQL, and
+                    Database Normalization techniques
+                  </p>
+                  <p>
+                    Marked and gave feedback on database design and
+                    implementation project
+                  </p>
+
+                  <p><b>CG2111A - Engineering Principles and Practice</b></p>
+                  <p>
+                    Provided consultations during lab sessions, grade lab
+                    reports
+                  </p>
+                  <p>
+                    Related topics: bare-metal programming, communication
+                    protocols, Lidar, SLAM, power management
+                  </p>
+                </div>
+                <div class="time">
+                  <h4>2021 - 2022</h4>
+                </div>
+              </li>
+
+              <li>
+                <div class="content">
+                  <h3>Machine Learning Engineer Intern</h3>
+                  <h3>Neuron Mobility (Singapore)</h3>
+                  <p>
+                    Trained and deployed ML models for scooter parking image
+                    classification on AWS SageMaker achieving more than 95%
+                    accuracy, detecting bad parking behaviours with 0.98
+                    precision, enhancing user experience, and saving US$200,000
+                    annually
+                  </p>
+                  <p>
+                    Proposed and coded backend for an in-house annotation
+                    platform utilizing Django REST Framework and PostgreSQL,
+                    streamlining collaboration between ML and data annotation
+                    teams, leading to time savings of 5+ hours per week
+                  </p>
+                  <p>
+                    Performed experiments with RK1808 neural processing unit
+                    (NPU) for on-chip surface detection task on scooters
+                  </p>
+                </div>
+                <div class="time">
+                  <h4>5 - 8/2022</h4>
+                </div>
+              </li>
+
+              <li>
+                <div class="content">
+                  <h3>Research Assistant</h3>
+                  <h3>Edison Physics Laboratory (Hanoi)</h3>
+                  <p>
+                    Designed, developed and tested experimental Physics models
+                  </p>
+                  <p>
+                    Conducted coaching sessions for students participating in
+                    Vietnam National Physics Olympiads
+                  </p>
+                </div>
+                <div class="time">
+                  <h4>2019 - 2020</h4>
+                </div>
+              </li>
+
+              <li>
+                <div class="content">
+                  <h3>Sportswriter</h3>
+                  <h3>Phutbugio.vn (Hanoi)</h3>
+                  <p>Wrote football match reports and analysis</p>
+                  <p>Reported football related news</p>
+                </div>
+                <div class="time">
+                  <h4>2018 - 2019</h4>
+                </div>
+              </li>
+
+              <div style="clear: both"></div>
+            </ul>
+          </div>
+
+          <!-- Education -->
+          <div class="timeline" id="education">
+            <ul>
+              <li>
+                <div class="content">
+                  <h3>National University of Singapore</h3>
+                  <p>Second-top graduate</p>
+                  <p>Bachelor of Computer Engineering</p>
+                  <p>Minors in Management and Data Engineering</p>
+                  <p>GPA: 4.90/5.0</p>
+                  <!-- <p><a href="assets/Nguyen Van Binh - Unofficial Transcript.pdf" download="Nguyen Van Binh - Transcript" 
+                                    target="_blank">Transcript <i class='bx bx-link-external' style="vertical-align:middle"></i></a> -->
+                  <!-- </p> -->
+                </div>
+                <div class="time">
+                  <h4>2020 - 2024</h4>
+                </div>
+              </li>
+              <li>
+                <div class="content">
+                  <h3>NUS Overseas Colleges</h3>
+                  <p>NOC Paris Batch 1</p>
+                  <p>
+                    Participated in entrepreneurship program at Université PSL
+                  </p>
+                </div>
+                <div class="time">
+                  <h4>1 - 7/2023</h4>
+                </div>
+              </li>
+              <li>
+                <div class="content">
+                  <h3>Hanoi University of Science and Technology</h3>
+                  <p>Data Science and Artificial Intelligence</p>
+                </div>
+                <div class="time">
+                  <h4>2019 - 2020</h4>
+                </div>
+              </li>
+              <li>
+                <div class="content">
+                  <h3>Phan Boi Chau High School for the Gifted</h3>
+                  <p>Major in Physics</p>
+                </div>
+                <div class="time">
+                  <h4>2016 - 2019</h4>
+                </div>
+              </li>
+
+              <div style="clear: both"></div>
+            </ul>
+          </div>
+        </div>
+      </section>
+
+      <!--Skills-->
+      <section class="skills section" id="skills">
+        <h2 class="section-title">Skills</h2>
+
+        <div class="skills__container bd-grid">
+          <div class="skills">
+            <h3 class="skill__title">Programming Languages</h3>
+            <ul>
+              <li>Python</li>
+              <li>C/C++</li>
+              <li>Java</li>
+              <li>RISC Assembly</li>
+              <li>Rust</li>
+            </ul>
+          </div>
+
+          <div class="skills">
+            <h3 class="skill__title">AI / Machine Learning</h3>
+            <ul>
+              <li>scikit-learn</li>
+              <li>PyTorch</li>
+              <li>TensorFlow</li>
+              <li>MLflow</li>
+            </ul>
+          </div>
+
+          <div class="skills">
+            <h3 class="skill__title">Database / Data Processing</h3>
+            <ul>
+              <li>RDBMS</li>
+              <li>PostgreSQL</li>
+              <li>Hadoop</li>
+              <li>Spark</li>
+            </ul>
+          </div>
+
+          <div class="skills">
+            <h3 class="skill__title">Hardware</h3>
+            <ul>
+              <li>FPGA Programming (Verilog, HLS)</li>
+              <li>ARM-based microcontroller</li>
+              <li>Raspberry Pi</li>
+              <li>Arduino</li>
+            </ul>
+          </div>
+
+          <div class="skills">
+            <h3 class="skill__title">Web Development</h3>
+            <ul>
+              <li>FastAPI</li>
+              <li>Django</li>
+              <li>Django REST Framework</li>
+              <li>HTML/CSS/JavaScript</li>
+            </ul>
+          </div>
+
+          <div class="skills">
+            <h3 class="skill__title">Others</h3>
+            <ul>
+              <li>Git, GitHub</li>
+              <li>Docker</li>
+              <li>Azure/AWS Cloud Services</li>
+              <li>Airflow</li>
+            </ul>
+          </div>
+        </div>
+      </section>
+
+      <!--Projects-->
+      <section class="projects section" id="projects">
+        <h2 class="section-title">Projects</h2>
+
+        <div class="tags">
+          <button class="tag-button" onclick="filterProjects('all')">
+            All
+          </button>
+          <button
+            class="tag-button"
+            onclick="filterProjects('machine-learning')"
+          >
+            Machine Learning
+          </button>
+          <button class="tag-button" onclick="filterProjects('robotics')">
+            Robotics
+          </button>
+          <button class="tag-button" onclick="filterProjects('web')">
+            Web
+          </button>
+          <button class="tag-button" onclick="filterProjects('others')">
+            Others
+          </button>
+        </div>
+
+        <div class="projects__container bd-grid">
+          <div class="card" data-tags="robotics">
+            <img src="assets/img/alex.png" alt="" class="card__img" />
+            <div class="card__data">
+              <h1 class="card__title">Alex</h1>
+
+              <p class="card__description">
+                Tele-operated vehicle with search and rescue functions using
+                Raspberry Pi, Arduino Uno, ROS, and Lidar
+              </p>
+              <a
+                href="https://github.com/nvbinh15/CG1112-Alex-03-04-02"
+                class="card__button"
+                target="_blank"
+                ><i class="bx bxl-github"></i
+              ></a>
             </div>
+          </div>
 
-            <!-- Add blank line -->
-            <div style="margin-bottom: 80px;"></div>
+          <div class="card" data-tags="machine-learning">
+            <img src="assets/img/quora.png" alt="" class="card__img" />
+            <div class="card__data">
+              <h1 class="card__title">Quora Question Pairs</h1>
 
-            <div class="bd-grid">
-
-                <div class="about__text" style="margin: 0 5% 5% 5%; text-align: center;">
-                    <p>I started Binary Dissect to share intermediate and advanced programming concepts and techniques. Follow us on <a href="https://www.linkedin.com/company/binary-dissect" target="_blank" style="color:inherit; text-decoration:underline">LinkedIn</a> or subscribe to a free newsletter below to get the latest update.</p>
-                </div>
-
-                <div class="about__img" style="margin: 0 1% 1% 0; text-align: center;">
-                    <iframe src="https://binarydissect.substack.com/embed" width="480" height="320" style="border:1px solid #EEE; background:white;" frameborder="0" scrolling="no"></iframe>
-                </div>
-
-
-
+              <p class="card__description">
+                Duplicate question detection and generative language models
+                using RNN, BERT family LLMs, MLP, and transformers
+              </p>
+              <a
+                href="https://github.com/cs3244-group-16/quora-question-pairs"
+                class="card__button"
+                target="_blank"
+                ><i class="bx bxl-github"></i
+              ></a>
             </div>
+          </div>
 
-        </section>
-
-        <!--Qualifications-->
-        <section class="qualification section" id="qualification">
-            <h2 class="section-title">Qualification</h2>
-
-            <div style="text-align: center;">
-                <p>
-                    <span class="q__toggle" id="education-toggle" onclick="showEducation()">&nbsp;<i
-                            class='bx-fw bx bxs-book-open'></i> Education</span>
-                    <i class='bx-fw bx bx-dots-vertical'></i>
-                    <span class="q__toggle" id="experience-toggle" onclick="showExperience()"><i
-                            class='bx-fw bx bxs-briefcase'></i> Experience</span>
-                </p>
+          <div class="card" data-tags="web">
+            <img src="assets/img/activenus.png" alt="" class="card__img" />
+            <div class="card__data">
+              <h1 class="card__title">ActiveNUS</h1>
+              <p class="card__description">
+                Web-based application promotes time management techniques and
+                study methods using Django and VueJS
+              </p>
+              <a
+                href="https://github.com/nvbinh15/ActiveNUS"
+                class="card__button"
+                target="_blank"
+                ><i class="bx bxl-github"></i
+              ></a>
+              <a
+                href="https://www.youtube.com/channel/UCLfyVqJoUrRML6toT-LDkIA"
+                class="card__button"
+                target="_blank"
+                ><i class="bx bxl-youtube"></i
+              ></a>
+              <a
+                href="https://activenus.up.railway.app/"
+                class="card__button"
+                target="_blank"
+                ><i class="bx bx-link-external"></i
+              ></a>
             </div>
+          </div>
 
-            <div class="qualification__container">
-                <!-- Experience -->
-                <div class="timeline" id="experience">
-                    <ul>
-                        <li>
-                            <div class="content">
-                                <h3>Software Engineer, Machine Learning Intern</h3>
-                                <h3>Vebits (Singapore)</h3>
-                                <p>Train and quantize ResNet-50 and YOLOv7 models with ByteTrack for image classification, object detection and tracking</p>
-                                <p>Build real-time video streaming system (1080p resolution at 30fps) integrating machine learning inference on Rockchip and Qualcomm SoC with hardware-accelerated codecs using GStreamer, multiprocessing, and pipelining in Python</p>
-                                <p>Create Python binding for C++ Snapdragon kernel libraries, streamlining development cycle for on-chip machine learning systems, bringing down inference time by 25 times compared to pure Python implementation</p>
-                                <p>Deliver tools for camera calibration, image orthogonalization, image stitching, distance, and depth estimations with OpenCV, speeding up internal image processing workflow by 55%</p>
-                            </div>
-                            <div class="time">
-                                <h4>1/2024 - now</h4>
-                            </div>
-                        </li>
-
-                        <li>
-                            <div class="content">
-                                <h3>Data Science Intern</h3>
-                                <h3>Science Feedback (Paris)</h3>
-                                <p>Developed web domain credibility ranking models with graph neural networks adopting PyTorch and NetworkX, set up end-to-end ML pipeline, deployed models in production (making prediction for > 1 million domains) using FastAPI</p>
-                                <p>Established data infrastructure (data warehouse, computation, orchestration) on Azure Cloud Services, enhancing data security, quality, and integrity, improving efficiency of data and software teams, and fastening ML life cycle by 40%</p>
-                                <p>Increased efficiency of social media data scraping process by 30% through customization of open-source tools</p>
-                            </div>
-                            <div class="time">
-                                <h4>2 - 8/2023</h4>
-                            </div>
-                        </li>
-
-                        <li>
-                            <div class="content">
-                                <h3>Research Assistant</h3>
-                                <h3>National University of Singapore</h3>
-                                <p>Analysed tradeoffs in learning algorithms for spiking fully connected and convolutional neural networks</p>
-                                <p>Framed architecture and wrote assembly instructions for spiking neural network hardware accelerators on FPGA</p>
-                            </div>
-                            <div class="time">
-                                <h4>1 - 12/2022</h4>
-                            </div>
-                        </li>
-
-                        <li>
-                            <div class="content">
-                                <h3>Teaching Assistant</h3>
-                                <h3>National University of Singapore</h3>
-                                <p><b><i>Named on the Honor List of Student Tutors</i></b></p>
-                                <p><b>IT5003 - Data Structure and Algorithms</b></p>
-                                <p>Conducted classes of ~20 Master students</p>
-                                <p>Reviewed related concepts and techniques, showcased live coding in Python</p>
-
-                                <p><b>CS2102 - Database Systems</b></p>
-                                <p>Facilitated the teaching and discussion of Relational Algebra, Entity-Relationship model, SQL, PostgreSQL, and Database Normalization techniques</p>
-                                <p>Marked and gave feedback on database design and implementation project</p>
-
-                                <p><b>CG2111A - Engineering Principles and Practice</b></p>
-                                <p>Provided consultations during lab sessions, grade lab reports</p>
-                                <p>Related topics: bare-metal programming, communication protocols, Lidar, SLAM, power management</p>
-                            </div>
-                            <div class="time">
-                                <h4>2021 - 2022</h4>
-                            </div>
-                        </li>
-
-                        <li>
-                            <div class="content">
-                                <h3>Machine Learning Engineer Intern</h3>
-                                <h3>Neuron Mobility (Singapore)</h3>
-                                <p>Trained and deployed ML models for scooter parking image classification on AWS SageMaker achieving more than 95%
-                                    accuracy, detecting bad parking behaviours with 0.98 precision, enhancing user experience, and saving US$200,000 annually</p>
-                                <p>Proposed and coded backend for an in-house annotation platform utilizing Django REST Framework and PostgreSQL,
-                                    streamlining collaboration between ML and data annotation teams, leading to time savings of 5+ hours per week</p>
-                                <p>Performed experiments with RK1808 neural processing unit (NPU) for on-chip surface detection task on scooters</p>
-                            </div>
-                            <div class="time">
-                                <h4>5 - 8/2022</h4>
-                            </div>
-                        </li>
-
-                        <li>
-                            <div class="content">
-                                <h3>Research Assistant</h3>
-                                <h3>Edison Physics Laboratory (Hanoi)</h3>
-                                <p>Designed, developed and tested experimental Physics models</p>
-                                <p>Conducted coaching sessions for students participating in Vietnam National Physics Olympiads</p>
-                            </div>
-                            <div class="time">
-                                <h4>2019 - 2020</h4>
-                            </div>
-                        </li>
-
-                        <li>
-                            <div class="content">
-                                <h3>Sportswriter</h3>
-                                <h3>Phutbugio.vn (Hanoi)</h3>
-                                <p>Wrote football match reports and analysis</p>
-                                <p>Reported football related news</p>
-                            </div>
-                            <div class="time">
-                                <h4>2018 - 2019</h4>
-                            </div>
-                        </li>
-
-                        <div style="clear:both;"></div>
-                    </ul>
-                </div>
-
-                <!-- Education -->
-                <div class="timeline" id="education">
-                    <ul>
-                        <li>
-                            <div class="content">
-                                <h3>National University of Singapore</h3>
-                                <p>Bachelor of Computer Engineering</p>
-                                <p>Minors in Management and Data Engineering</p>
-                                <p>GPA: 4.91/5.0</p>
-                                <p>Dean's List in all 4 eligible semesters</p>
-                                <p><a href="assets/Nguyen Van Binh - Unofficial Transcript.pdf" download="Nguyen Van Binh - Transcript" 
-                                    target="_blank">Transcript <i class='bx bx-link-external' style="vertical-align:middle"></i></a>
-                                </p>
-                            </div>
-                            <div class="time">
-                                <h4>2020 - now</h4>
-                            </div>
-                        </li>
-                        <li>
-                            <div class="content">
-                                <h3>NUS Overseas Colleges</h3>
-                                <p>NOC Paris Batch 1</p>
-                                <p>Participated in entrepreneurship program at Université PSL</p>
-                            </div>
-                            <div class="time">
-                                <h4>1 - 7/2023</h4>
-                            </div>
-                        </li>
-                        <li>
-                            <div class="content">
-                                <h3>Hanoi University of Science and Technology</h3>
-                                <p>Data Science and Artificial Intelligence</p>
-                            </div>
-                            <div class="time">
-                                <h4>2019 - 2020</h4>
-                            </div>
-                        </li>
-                        <li>
-                            <div class="content">
-                                <h3>Phan Boi Chau High School for the Gifted</h3>
-                                <p>Major in Physics</p>
-                            </div>
-                            <div class="time">
-                                <h4>2016 - 2019</h4>
-                            </div>
-                        </li>
-
-                        <div style="clear:both;"></div>
-                    </ul>
-                </div>
+          <div class="card" data-tags="robotics machine-learning">
+            <img src="assets/img/laster_tag.png" alt="" class="card__img" />
+            <div class="card__data">
+              <h1 class="card__title">Laser Tag++</h1>
+              <p class="card__description">
+                AR shooting game with on-chip motion detection model and game
+                engine running on Avnet Ultra96-V2 board
+              </p>
+              <a
+                href="https://github.com/CG4002-B3/hardware-ai"
+                class="card__button"
+                target="_blank"
+                ><i class="bx bxl-github"></i
+              ></a>
+              <a
+                href="https://youtu.be/nKTPNiXV2OA"
+                class="card__button"
+                target="_blank"
+                ><i class="bx bxl-youtube"></i
+              ></a>
             </div>
-        </section>
+          </div>
 
-        <!--Skills-->
-        <section class="skills section" id="skills">
-            <h2 class="section-title">Skills</h2>
-
-            <div class="skills__container bd-grid">
-
-                <div class="skills">
-                    <h3 class="skill__title">Programming Languages</h3>
-                    <ul>
-                        <li>Python</li>
-                        <li>C/C++</li>
-                        <li>Java</li>
-                        <li>RISC Assembly</li>
-                        <li>Rust</li>
-                    </ul>
-                </div>
-                
-                <div class="skills">
-                    <h3 class="skill__title">AI / Machine Learning</h3>
-                    <ul>
-                        <li>scikit-learn</li>
-                        <li>PyTorch</li>
-                        <li>TensorFlow</li>
-                        <li>MLflow</li>
-                    </ul>
-                </div>
-
-                <div class="skills">
-                    <h3 class="skill__title">Database / Data Processing</h3>
-                    <ul>
-                        <li>RDBMS</li>
-                        <li>PostgreSQL</li>
-                        <li>Hadoop</li>
-                        <li>Spark</li>
-                    </ul>
-                </div>
-
-                <div class="skills">
-                    <h3 class="skill__title">Hardware</h3>
-                    <ul>
-                        <li>FPGA Programming (Verilog, HLS)</li>
-                        <li>ARM-based microcontroller</li>
-                        <li>Raspberry Pi</li>
-                        <li>Arduino</li>
-                    </ul>
-                </div>
-
-                <div class="skills">
-                    <h3 class="skill__title">Web Development</h3>
-                    <ul>
-                        <li>FastAPI</li>
-                        <li>Django</li>
-                        <li>Django REST Framework</li>
-                        <li>HTML/CSS/JavaScript</li>
-                    </ul>
-                </div>
-
-                <div class="skills">
-                    <h3 class="skill__title">Others</h3>
-                    <ul>
-                        <li>Git, GitHub</li>
-                        <li>Docker</li>
-                        <li>Azure/AWS Cloud Services</li>
-                        <li>Airflow</li>
-                    </ul>
-                </div>
-
+          <div class="card" data-tags="machine-learning">
+            <img src="assets/img/discord.png" alt="" class="card__img" />
+            <div class="card__data">
+              <h1 class="card__title">DisneyLang</h1>
+              <p class="card__description">
+                Discord bot with NLP-related functionalities built with Natural
+                Language Toolkit
+              </p>
+              <a
+                href="https://github.com/nvbinh15/DisneyLang"
+                class="card__button"
+                target="_blank"
+                ><i class="bx bxl-github"></i
+              ></a>
+              <a
+                href="https://discord.com/oauth2/authorize?client_id=928832278027730954&permissions=8&scope=bot"
+                class="card__button"
+                target="_blank"
+                ><i class="bx bx-link-external"></i
+              ></a>
             </div>
+          </div>
 
-        </section>
+          <div class="card" data-tags="others">
+            <img src="assets/img/fpga.png" alt="" class="card__img" />
+            <div class="card__data">
+              <h1 class="card__title">FPGA Project</h1>
 
-        <!--Projects-->
-        <section class="projects section" id="projects">
-            <h2 class="section-title">Projects</h2>
-
-            <div class="tags">
-                <button class="tag-button" onclick="filterProjects('all')">All</button>
-                <button class="tag-button" onclick="filterProjects('machine-learning')">Machine Learning</button>
-                <button class="tag-button" onclick="filterProjects('robotics')">Robotics</button>
-                <button class="tag-button" onclick="filterProjects('web')">Web</button>
-                <button class="tag-button" onclick="filterProjects('others')">Others</button>
+              <p class="card__description">
+                Sight and Sound Entertainment system using Verilog and Digilent
+                Basys 3 Board
+              </p>
+              <a
+                href="https://github.com/nvbinh15/FPGA-Project-EE2026"
+                class="card__button"
+                target="_blank"
+                ><i class="bx bxl-github"></i
+              ></a>
             </div>
+          </div>
 
-            <div class="projects__container bd-grid">
+          <div class="card" data-tags="robotics">
+            <img src="assets/img/mbot.png" alt="" class="card__img" />
+            <div class="card__data">
+              <h1 class="card__title">mBot</h1>
 
-                <div class="card" data-tags="robotics">
-                    <img src="assets/img/alex.png" alt="" class="card__img">
-                    <div class="card__data">
-                        <h1 class="card__title">Alex</h1>
+              <p class="card__description">
+                Autonomous robot that can solve a maze, detect and process data
+                from the environment using Arduino Uno
+              </p>
+              <a
+                href="https://github.com/nvbinh15/CG1111-mBot"
+                class="card__button"
+                ><i class="bx bxl-github" target="_blank"></i
+              ></a>
+            </div>
+          </div>
 
-                        <p class="card__description">Tele-operated vehicle with search and rescue
-                            functions using Raspberry Pi, Arduino Uno, ROS, and Lidar</p>
-                        <a href="https://github.com/nvbinh15/CG1112-Alex-03-04-02" class="card__button"
-                            target="_blank"><i class='bx bxl-github'></i></a>
-                    </div>
-                </div>
-
-                <div class="card" data-tags="machine-learning">
-                    <img src="assets/img/quora.png" alt="" class="card__img">
-                    <div class="card__data">
-                        <h1 class="card__title">Quora Question Pairs</h1>
-
-                        <p class="card__description">Duplicate question detection and generative language models using RNN, BERT family LLMs, MLP, and transformers</p>
-                        <a href="https://github.com/cs3244-group-16/quora-question-pairs" class="card__button"
-                            target="_blank"><i class='bx bxl-github'></i></a>
-                    </div>
-                </div>
-
-                <div class="card" data-tags="web">
-                    <img src="assets/img/activenus.png" alt="" class="card__img">
-                    <div class="card__data">
-                        <h1 class="card__title">ActiveNUS</h1>
-                        <p class="card__description">Web-based application promotes time management techniques and
-                            study methods using Django and VueJS</p>
-                        <a href="https://github.com/nvbinh15/ActiveNUS" class="card__button" target="_blank"><i
-                                class='bx bxl-github'></i></a>
-                        <a href="https://www.youtube.com/channel/UCLfyVqJoUrRML6toT-LDkIA" class="card__button" target="_blank"><i
-                                class='bx bxl-youtube'></i></a>                                
-                        <a href="https://activenus.up.railway.app/" class="card__button" target="_blank"><i
-                                class='bx bx-link-external'></i></a>
-                    </div>
-                </div>
-
-                <div class="card" data-tags="robotics machine-learning">
-                    <img src="assets/img/laster_tag.png" alt="" class="card__img">
-                    <div class="card__data">
-                        <h1 class="card__title">Laser Tag++</h1>
-                        <p class="card__description">AR shooting game with on-chip motion detection model and game engine running on Avnet Ultra96-V2 board</p>
-                        <a href="https://github.com/CG4002-B3/hardware-ai" class="card__button"
-                            target="_blank"><i class='bx bxl-github'></i></a>
-                        <a href="https://youtu.be/nKTPNiXV2OA" class="card__button" target="_blank"><i
-                            class='bx bxl-youtube'></i></a> 
-                    </div>
-                </div>
-
-                <div class="card" data-tags="machine-learning">
-                    <img src="assets/img/discord.png" alt="" class="card__img">
-                    <div class="card__data">
-                        <h1 class="card__title">DisneyLang</h1>
-                        <p class="card__description">Discord bot with NLP-related functionalities built with Natural
-                            Language Toolkit</p>
-                        <a href="https://github.com/nvbinh15/DisneyLang" class="card__button" target="_blank"><i
-                                class='bx bxl-github'></i></a>
-                        <a href="https://discord.com/oauth2/authorize?client_id=928832278027730954&permissions=8&scope=bot"
-                            class="card__button" target="_blank"><i class='bx bx-link-external'></i></a>
-                    </div>
-                </div>
-
-                <div class="card" data-tags="others">
-                    <img src="assets/img/fpga.png" alt="" class="card__img">
-                    <div class="card__data">
-                        <h1 class="card__title">FPGA Project</h1>
-
-                        <p class="card__description">Sight and Sound Entertainment system using Verilog and Digilent
-                            Basys 3 Board</p>
-                        <a href="https://github.com/nvbinh15/FPGA-Project-EE2026" class="card__button"
-                            target="_blank"><i class='bx bxl-github'></i></a>
-                    </div>
-                </div>
-
-                <div class="card" data-tags="robotics">
-                    <img src="assets/img/mbot.png" alt="" class="card__img">
-                    <div class="card__data">
-                        <h1 class="card__title">mBot</h1>
-
-                        <p class="card__description">Autonomous robot that can solve a maze, detect and process data
-                            from the environment using Arduino Uno</p>
-                        <a href="https://github.com/nvbinh15/CG1111-mBot" class="card__button"><i class='bx bxl-github'
-                                target="_blank"></i></a>
-                    </div>
-                </div>
-
-                <!-- <div class="card">
+          <!-- <div class="card">
                     <img src="assets/img/discord.png" alt="" class="card__img">
                     <div class="card__data">
                         <h1 class="card__title">Stitch</h1>
@@ -483,120 +657,163 @@
                     </div>
                 </div> -->
 
-                <div class="card" data-tags="others">
-                    <img src="assets/img/java.png" alt="" class="card__img">
-                    <div class="card__data">
-                        <h1 class="card__title">CLICK</h1>
-                        <p class="card__description">All-in-one desktop app for managing modules, tracking food
-                            consumption, time scheduling, and journaling</p>
-                        <a href="https://github.com/AY2122S1-CS2113T-T09-4/tp" class="card__button" target="_blank"><i
-                                class='bx bxl-github'></i></a>
-                    </div>
-                </div>
-
-
-                <div class="card" data-tags="robotics">
-                    <img src="assets/img/rtos.png" alt="" class="card__img">
-                    <div class="card__data">
-                        <h1 class="card__title">RTOS Project</h1>
-                        <p class="card__description">Semi-automated car with light and sound functions based on Keil RTX real-time OS running on KL25Z board</p>
-                        <a href="https://github.com/nvbinh15/cg2271-rtos-project" class="card__button" target="_blank"><i
-                                class='bx bxl-github'></i></a>
-                        <a href="https://youtu.be/h3exgyn96FM" class="card__button" target="_blank"><i
-                            class='bx bxl-youtube'></i></a>  
-                    </div>
-                </div>
-
+          <div class="card" data-tags="others">
+            <img src="assets/img/java.png" alt="" class="card__img" />
+            <div class="card__data">
+              <h1 class="card__title">CLICK</h1>
+              <p class="card__description">
+                All-in-one desktop app for managing modules, tracking food
+                consumption, time scheduling, and journaling
+              </p>
+              <a
+                href="https://github.com/AY2122S1-CS2113T-T09-4/tp"
+                class="card__button"
+                target="_blank"
+                ><i class="bx bxl-github"></i
+              ></a>
             </div>
-        </section>
+          </div>
 
+          <div class="card" data-tags="robotics">
+            <img src="assets/img/rtos.png" alt="" class="card__img" />
+            <div class="card__data">
+              <h1 class="card__title">RTOS Project</h1>
+              <p class="card__description">
+                Semi-automated car with light and sound functions based on Keil
+                RTX real-time OS running on KL25Z board
+              </p>
+              <a
+                href="https://github.com/nvbinh15/cg2271-rtos-project"
+                class="card__button"
+                target="_blank"
+                ><i class="bx bxl-github"></i
+              ></a>
+              <a
+                href="https://youtu.be/h3exgyn96FM"
+                class="card__button"
+                target="_blank"
+                ><i class="bx bxl-youtube"></i
+              ></a>
+            </div>
+          </div>
+        </div>
+      </section>
 
-        <!--Awards-->
-        <section class="awards section" id="awards">
-            <h2 class="section-title">Awards</h2>
+      <!--Awards-->
+      <section class="awards section" id="awards">
+        <h2 class="section-title">Awards</h2>
 
-            <div class="awards__container bd-grid">
+        <div class="awards__container bd-grid">
+          <div class="award__div">
+            <img src="assets/img/eupho.png" alt="" class="award__img" />
+            <div class="award__hide">
+              <h3 class="award__title">
+                Bronze Medal - European Physics Olympiad
+              </h3>
+              <p class="award__description">6/2019</p>
+            </div>
+          </div>
 
-                <div class="award__div">
-                    <img src="assets/img/eupho.png" alt="" class="award__img">
-                    <div class="award__hide">
-                        <h3 class="award__title">Bronze Medal - European Physics Olympiad</h3>
-                        <p class="award__description">6/2019</p>
-                    </div>
-                </div>
+          <div class="award__div">
+            <img src="assets/img/nus.png" alt="" class="award__img" />
+            <div class="award__hide">
+              <h3 class="award__title">Deans' List - NUS</h3>
+              <p class="award__description">
+                12/2021 | 5/2022 | 12/2022 | 12/2023
+              </p>
+            </div>
+          </div>
 
-                <div class="award__div">
-                    <img src="assets/img/nus.png" alt="" class="award__img">
-                    <div class="award__hide">
-                        <h3 class="award__title">Deans' List - NUS </h3>
-                        <p class="award__description">12/2021 | 5/2022 | 12/2022 | 12/2023</p>
-                    </div>
-                </div>
+          <div class="award__div">
+            <img src="assets/img/aws.png" alt="" class="award__img" />
+            <div class="award__hide">
+              <h3 class="award__title">
+                Champions - Vietnam National AWS DeepRacer League
+              </h3>
+              <p class="award__description">12/2019</p>
+            </div>
+          </div>
 
-                <div class="award__div">
-                    <img src="assets/img/aws.png" alt="" class="award__img">
-                    <div class="award__hide">
-                        <h3 class="award__title">Champions - Vietnam National AWS DeepRacer League</h3>
-                        <p class="award__description">12/2019</p>
-                    </div>
-                </div>
-
-                <!-- <div class="award__div">
+          <!-- <div class="award__div">
                     <img src="assets/img/physics.png" alt="" class="award__img">
                     <div class="award__hide">
                         <h3 class="award__title">Second Prize - Vietnam National Olympiad in Physics</h3>
                         <p class="award__description">1/2019</p>
-                    </div>
-                </div> -->
+                    </div> -->
+        </div>
+      </section>
 
-        </section>
+      <!--Contact Me-->
+      <section class="contact section" id="contact">
+        <h2 class="section-title">Contact Me</h2>
 
-        <!--Contact Me-->
-        <section class="contact section" id="contact">
-            <h2 class="section-title">Contact Me</h2>
-
-            <div class="contact__container bd-grid">
-                
-                <!-- <div class="contact__item">
+        <div class="contact__container bd-grid">
+          <!-- <div class="contact__item">
                     <a href='tel:+6583652435' class='contact__link'><i class='bx bxs-phone'></i> (+65) 8365 2435</a>
                 </div> -->
 
-                <div class="contact__item">
-                    <a href='tel:+6583073859' class='contact__link'><i class='bx bxs-phone'></i> (+65) 8307 3859</a>
-                </div>
-                
+          <div class="contact__item">
+            <a href="tel:+6583073859" class="contact__link"
+              ><i class="bx bxs-phone"></i> (+65) 8307 3859</a
+            >
+          </div>
 
-                <div class="contact__item">
-                    <a href='mailto:nguyen.binh@u.nus.edu' target="_blank" class='contact__link'><i
-                            class='bx bxs-envelope'></i> nguyen.binh@u.nus.edu</a>
-                </div>
+          <div class="contact__item">
+            <a
+              href="mailto:nguyen.binh@u.nus.edu"
+              target="_blank"
+              class="contact__link"
+              ><i class="bx bxs-envelope"></i> nguyen.binh@u.nus.edu</a
+            >
+          </div>
 
-                <!-- <div class="contact__item">
+          <!-- <div class="contact__item">
                     <a href='mailto:binh.pdc01@gmail.com' target="_blank" class='contact__link'><i
                             class='bx bxs-envelope'></i> binh.pdc01@gmail.com</a>
                 </div> -->
-                
-                <div class="contact__item">
-                    <a href='https://t.me/binh_nguyen' target="_blank" class='contact__link'><i
-                            class='bx bxl-telegram'></i> binh_nguyen</a>
-                </div>
 
-            </div>
+          <div class="contact__item">
+            <a
+              href="https://t.me/binh_nguyen"
+              target="_blank"
+              class="contact__link"
+              ><i class="bx bxl-telegram"></i> binh_nguyen</a
+            >
+          </div>
+        </div>
+      </section>
 
-        </section>
-
-        <!--Scroll to top-->
-        <i onclick="goToTop()" id="goToTop" class='bx bxs-chevron-up-circle bx-lg'></i>
+      <!--Scroll to top-->
+      <i
+        onclick="goToTop()"
+        id="goToTop"
+        class="bx bxs-chevron-up-circle bx-lg"
+      ></i>
     </main>
 
     <!--Footer-->
     <footer class="footer">
-        <p class="footer__title">Nguyen Van Binh</p>
-        <div class="footer__social">
-            <a href="https://www.linkedin.com/in/nvbinh/" class="footer__icon" target="_blank"><i class='bx bxl-linkedin'></i></a>
-            <a href="https://github.com/nvbinh15" class="footer__icon" target="_blank"><i class='bx bxl-github'></i></a>
-            <a href="https://medium.com/@nvbinh" class="footer__icon" target="_blank"><i class='bx bxl-medium'></i></a>
-        </div>
+      <p class="footer__title">Nguyen Van Binh</p>
+      <div class="footer__social">
+        <a
+          href="https://www.linkedin.com/in/nvbinh/"
+          class="footer__icon"
+          target="_blank"
+          ><i class="bx bxl-linkedin"></i
+        ></a>
+        <a
+          href="https://github.com/nvbinh15"
+          class="footer__icon"
+          target="_blank"
+          ><i class="bx bxl-github"></i
+        ></a>
+        <a
+          href="https://medium.com/@nvbinh"
+          class="footer__icon"
+          target="_blank"
+          ><i class="bx bxl-medium"></i
+        ></a>
+      </div>
     </footer>
 
     <!--Scroll-->
@@ -604,6 +821,5 @@
 
     <!--JavaScript-->
     <script src="assets/js/main.js"></script>
-</body>
-
+  </body>
 </html>
