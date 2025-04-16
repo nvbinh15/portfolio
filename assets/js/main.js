@@ -118,6 +118,39 @@ function showEducation() {
   exp.style.display = "none";
 }
 
+/* Toggle collapsible experience content */
+function toggleExperienceContent(element) {
+  const content = element.querySelector('.content');
+  const details = content.querySelector('.experience-details');
+  const headings = content.querySelectorAll('h3');
+  
+  // Get the last h3 element which will have our arrow
+  const lastHeading = headings[headings.length - 1];
+  
+  if (details.style.maxHeight) {
+    details.style.maxHeight = null;
+    lastHeading.classList.remove('expanded');
+  } else {
+    details.style.maxHeight = details.scrollHeight + "px";
+    lastHeading.classList.add('expanded');
+  }
+}
+
+// Make experience the default tab when page loads
+document.addEventListener('DOMContentLoaded', function() {
+  showExperience();
+  
+  // Initialize collapsible sections
+  const experienceItems = document.querySelectorAll('#experience li');
+  experienceItems.forEach(item => {
+    const content = item.querySelector('.content');
+    const details = content.querySelector('.experience-details');
+    if (details) {
+      details.style.maxHeight = null;
+    }
+  });
+});
+
 const srLeft = ScrollReveal({
   origin: "left",
   distance: "75px",

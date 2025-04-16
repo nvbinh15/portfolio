@@ -765,3 +765,48 @@ img {
   background-color: var(--dark-color);
   color: white;
 }
+
+/* Experience collapsible content */
+#experience li {
+  cursor: pointer;
+  position: relative;
+}
+
+#experience li:hover {
+  background-color: rgba(122, 188, 221, 0.05);
+}
+
+#experience li .content h3 {
+  position: relative;
+}
+
+/* Only add arrow to the last h3 in each content section */
+#experience li .content h3:last-of-type::after {
+  content: "\25BC"; /* Down arrow */
+  font-size: 0.7rem;
+  position: absolute;
+  right: -20px;
+  top: 50%;
+  transform: translateY(-50%);
+  transition: transform 0.3s ease;
+}
+
+/* Change to up arrow when expanded */
+#experience li .content h3.expanded::after {
+  content: "\25B2"; /* Up arrow */
+}
+
+#experience li .experience-details {
+  overflow: hidden;
+  max-height: 0;
+  transition: max-height 0.5s ease-in-out;
+}
+
+/* Default styling for experience tab to be active */
+#experience-toggle {
+  opacity: 1;
+}
+
+#education-toggle {
+  opacity: 0.5;
+}
