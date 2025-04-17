@@ -410,6 +410,12 @@ img {
     left: 50px;
     right: inherit;
   }
+  
+  /* Position arrow on the left for all items in mobile view */
+  #experience li .content h3:last-of-type::after {
+    left: auto !important;
+    right: -20px !important;
+  }
 }
 
 /* ===== SKILLS =====*/
@@ -798,10 +804,21 @@ img {
   content: "\25BC"; /* Down arrow */
   font-size: 0.7rem;
   position: absolute;
-  right: -20px;
   top: 50%;
   transform: translateY(-50%);
   transition: transform 0.3s ease;
+}
+
+/* Position arrow on left side for items on left side of timeline (odd items) */
+#experience li:nth-child(odd) .content h3:last-of-type::after {
+  left: -20px;
+  right: auto;
+}
+
+/* Position arrow on right side for items on right side of timeline (even items) */
+#experience li:nth-child(even) .content h3:last-of-type::after {
+  right: -20px;
+  left: auto;
 }
 
 /* Change to up arrow when expanded */
