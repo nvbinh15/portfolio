@@ -49,4 +49,8 @@ Temporary Items
 # iCloud generated files
 *.icloud
 
+### Project ###
+# Playwright MCP session artifacts (screenshots, snapshots, console logs)
+.playwright-mcp/
+
 # End of https://www.toptal.com/developers/gitignore/api/macos,linux
