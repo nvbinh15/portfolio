@@ -301,6 +301,12 @@ footer p {
   margin: 0;
 }
 
+@media (min-width: 701px) {
+  body {
+    zoom: 75%;
+  }
+}
+
 @media (max-width: 700px) {
   body {
     font-size: 18px;
